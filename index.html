@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="./assets/css/wireframe.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <meta http-equiv="refresh" content="5">
+<!--  <meta http-equiv="refresh" content="5">-->
 </head>
 
 <body class="">
@@ -27,6 +27,7 @@
           <li><a href="#sobremim">Sobre Mim</a></li>
           <li><a href="#projetos">Meus Projetos</a></li>
           <li><a href="#habilidades">Minhas Habilidades</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </div>
     </nav>
@@ -64,18 +65,24 @@
     </div>
   </section>
   <section id="sobremim">
-    <div class="h-100 mt-5">
-      <div class="container mb-5 py-5">
+    <div class="h-100">
+      <div class="container py-5">
         <div class="row">
-          <div class="col-md-12 mt-4">
+          <div class="col-md-6 mt-4">
             <h1 class="display-5 text-center" style="color:#F2AE30"><b>Sobre Mim</b></h1>
           </div>
           <div class="row my-5 justify-content-center">
-            <div class="col-md-12 mb-5">
+            <div class="col-md-12 mb-0">
               <p class="lead text-muted"> </p>
-              <h4 style="color:#F2AE30"> Olá, bem vindo(a) ao meu portifólio, meu nome é&nbsp;Daniel Sodré Basilio.&nbsp; Se você chegou até aqui certamente deve estar procurando por um profissional&nbsp;com o compromisso de entregar o melhor&nbsp;Website para seus clientes.&nbsp;</h4><br>
+              <h4 style="color:#F2AE30"> Bem vindo(a) ao portifólio, de &nbsp;Daniel Sodré Basilio.&nbsp; Se você chegou até aqui certamente deve estar a procura de um profissional&nbsp;com o compromisso de entregar o melhor&nbsp;Website para seus clientes.&nbsp;</h4><br>
             </div>
           </div>
+<!--           <iframe src="https://share.synthesia.io/embeds/videos/145f43ec-b179-4f00-b392-57e92f2daea9"</iframe>-->
+
+          <div class="col-lg-6 col-md-6">
+              <video src="./assets/video/IA.mp4" class="embed-responsive-item" controls="controls"  style="width: 600px; height: 400px"> Your browser does not support HTML5 video. </video>
+          </div>
+
         </div>
       </div>
     </div>
@@ -127,8 +134,10 @@
         </div>
         <div class="row">
           <div class="w-100 col-md-6" style="">
-            <div class="" style="text-align: center"><img class="d-block img-fluid" src="assets/img/github.png"></div>
-              <a href="https://github.com/dsdanielsodre"> Repositórios Github </a>
+            <div class="github">
+              <a href="https://github.com/dsdanielsodre">
+                <img src="assets/img/github.png"> Repositórios Github </a>
+            </div>
           </div>
         </div>
       </div>
@@ -157,44 +166,46 @@
     </div>
   </section>
   <footer style="background-color: #F2AE30">
-    <div class="" style="">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1 class="display-5 text-center " style="color: rgb(4, 41, 64);"><b>Contato</b></h1>
+    <section id="contato">
+      <div class="" style="">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="display-5 text-center " style="color: rgb(4, 41, 64);"><b>Contato</b></h1>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 border border-dark" style="">
-            <div class="form-group border border-primary"><label class=""><b>Formulário de contato</b></label>
-              <div class="input-group">
-                <label>Email:&nbsp;</label><input type="text" class="form-control" placeholder="exemplo@email.com">
-                <div class="form-group"><label>Telefone:&nbsp;</label><input type="text" class="form-control" placeholder="(XX) X.XXXX-XXXX"></div>
-                <div class="input-group-append text-center p-3"><button class="btn text-left btn-success w-50" type="button">Enviar</button></div>
+          <div class="row">
+            <div class="col-md-12 border border-dark" style="">
+              <div class="form-group border border-primary"><label class=""><b>Formulário de contato</b></label>
+                <div class="input-group">
+                  <label>Email:&nbsp;</label><input type="text" class="form-control" placeholder="exemplo@email.com">
+                  <div class="form-group"><label>Telefone:&nbsp;</label><input type="text" class="form-control" placeholder="(XX) X.XXXX-XXXX"></div>
+                  <div class="input-group-append text-center p-3"><button class="btn text-left btn-success w-50" type="button">Enviar</button></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 mt-1">
-            <p class="btn float-right rounded border btn-secondary" style="">
-              <a href="#">Voltar ao Topo</a>
-            </p>
+          <div class="row">
+            <div class="col-md-12 mt-1">
+              <p class="btn float-right rounded border btn-secondary" style="">
+                <a href="#inicio">Voltar ao Topo</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="py-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p class="text-right">Feito por Daniel Sodré Basilio</p>
-            <form class="form-inline">
-            </form>
+      <div class="py-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="text-right">Feito por Daniel Sodré Basilio</p>
+              <form class="form-inline">
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

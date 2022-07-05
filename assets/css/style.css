@@ -408,7 +408,14 @@ nav ul li a:hover{
     }
 }
 
+.github{
+    text-align: center;
+}
 
+.github:hover{
+   
+    color:red;
+}
 
 
 
