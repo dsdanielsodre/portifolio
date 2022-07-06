@@ -283,6 +283,7 @@ nav ul{
 
 nav.black ul{
     background: #000;
+    position: static;
 
 }
 
@@ -317,7 +318,7 @@ nav ul li a:hover{
 
 
  .card{
-/*    position:relative;*/
+/*   position:relative;*/
     display:flex;
     flex-direction:column;
     min-width:0;
@@ -377,8 +378,9 @@ nav ul li a:hover{
 }
 */
 
-     #inicio{
-    background: linear-gradient(63.13deg, #593e25 51.04%, #f2ae30 51.05%);
+/*Sections*/
+       #inicio{
+    background: linear-gradient(63.13deg, #E99825  51.04%,  #D17F0D 51.05%);
              display: flex;
     align-items: center;
 }
@@ -392,20 +394,21 @@ nav ul li a:hover{
     background-color:#042940;
     }
 
-#projetos{
-    background-color:#F2AE30;
+#projetos, #contato{
+    background-color:#E99825;
     
 }
 
 @media (max-width: 1200px){
     
-  #inicio, #sobremim {
+  #inicio{
       
-    background: #352728;
+    background: #D17F0D;
     height: auto;
     width: auto;
           
     }
+    
 }
 
 .github{
@@ -417,7 +420,46 @@ nav ul li a:hover{
     color:red;
 }
 
+/*Sections*/
 
+/*Caixa de Habilidades*/
+.box_item{
+    height: 160px;
+   width: 270px;
+    margin: 1% 0.2%;
+align-items: center;
+text-align: center;
+/*width: 10%;*/
+/*min-height: 100px;*/
+/*position: absolute;*/
+border-radius: 40px;
+background: #D17F0D;
+
+}
+
+
+.box_item:hover{
+    width: 270px;
+    font-size: 0;
+    
+}
+
+
+.box_item:hover img{ 
+display: none;
+    
+}
+
+.box_item:hover:after{
+    font-weight: bold;
+    color: #fff;
+    content: attr(data-hover);
+    text-align: justify;
+    font-size: 12px;
+}
+
+
+/*Caixa de Habilidades*/
 
  .mr-0{
     margin-right:0!important;
