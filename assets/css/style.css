@@ -138,8 +138,6 @@
     }
 }
 
-
-
  .btn{
     display:inline-block;
     font-weight:200;
@@ -225,7 +223,7 @@
 }
 
 /*NAV INICIO ----------------------------------------------------------------------------------------------------------*/
-html, body{
+ html, body{
   margin: 0;
   padding: 0;
   width: 100%;
@@ -238,13 +236,14 @@ body{
 header{
     width: 100%;
 /*    height: 100vh;*/
-  font-family: sans-serif;
+
 /*
     background-image: url(teste.jpg);
     background-repeat: no-repeat;
+  font-family: sans-serif;
 */
-
 }
+
 
 .content{
     width: 100%;
@@ -265,6 +264,7 @@ header{
     font-size: 24px;
 }
 
+
 nav{
     position: fixed;
     width: 100%;
@@ -280,18 +280,18 @@ nav ul{
     text-align: right;
     margin: 0;
     transition: 0.6s;
-}
+} 
 
+@media (min-width: 1278px) {
+    nav.black ul{
+        /* background: #000; */
+        position: static;  
 
-nav.black ul{
-    background: #000;
-    position: static;
-    /* opacity: 0.9; */
-
-}
-
+    }
+}   
 nav.black ul li a{
     color: #fff;
+    /* opacity: 0.9; */
     }
 
 nav.black ul li a:hover{
@@ -327,9 +327,9 @@ nav ul li a:hover{
 letter-spacing: 3px;
 margin-left:  32px;
 
-}
+} 
 
-/* *{
+*{
     margin: 0;
     padding: 0;
 }
@@ -348,75 +348,107 @@ font-size: 24px;
 text-transform: uppercase;
 letter-spacing: 4px;
 
-} */
-/* nav{
+} 
+
+nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: #23232e;
     height: 8vh;
-} *//* */
-
+} 
 
 /*NAV END --------------------------------------------------------------------------------------------------*/
 
 
 /*NAV - MOBILE --------------------------------------------------------------------------------------------------*/
 
-.mobile-menu{
+
+/*Hamburguer localização e cor*/
+ .mobile-menu{
 display: none;
 cursor: pointer;
+margin-top: 1em;
 }
 
 .mobile-menu div{
     width: 32px;
     height: 2px;
-    background: #000;
+    background: #fff;
     margin: 8px 8px;
     transition: 0.3s;
+
+} 
+
+nav{
+    height: 5vh;
+    background-color: #23232e;
+    display: block;
+}
+.nav-list{
+    position: absolute; 
+    top: 7vh; 
+    right: 0;
+    width: 100vw;
+    height: 93vh;
+    background-color: #23232e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateY(100%);
+    Transition: transform 0.3s ease-in;  
+
 }
 
 
-@media (max-width: 999px) {
+@media (max-width: 1279px) {
     body{
-       overflow-y: hidden; 
+       overflow-x: hidden; 
     }
 
-    .nav{
-        height: 8vh;
+   
+    nav{
+        height: 7vh;
     }
     .nav-list{
-        position: relative;
-        top: 8vh;
-        right: 0;
-        width: 100%;
-        height: 92vh;
-        background: #23232e;
-        color: #fff;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateY(100%);
-        Transition: transform 0.3s ease-in; 
-
+        top: 6vh; 
+        height: 96vh;
     }
 
+
     .nav-list li{
+        display: inline;
+      
         margin-left: 0;
         opacity: 0;
     }
 
+    
     .mobile-menu{
         display: block;
     }
 
 
-}
+} /*hamburguer icone*/
 
-.nav-list.active{
+ .nav-list.active{
     transform: translateY(0);
-} 
+  } 
+
+
+.nav-list.active li{
+    margin: 100px;
+    align-items: center;
+   opacity: 1;
+ } 
+
+.nav-list.active a{
+    margin: 20px;
+    text-align: center;
+    color: #fff;
+
+  }  
 
 @keyframes navLinkFade {
 
@@ -430,17 +462,21 @@ cursor: pointer;
 
     }
 
-}
+} 
 
-.mobile-menu.active .line1{
+
+/*Efeito no Hamburguer*/
+ .mobile-menu.active .line1{
+   background-color: #fff; 
  transform: rotate(-45deg) translate(-8px, 8px);    
 }
 .mobile-menu.active .line2{
     opacity: 0;
 }
 .mobile-menu.active .line3{
+    background-color: #fff; 
     transform: rotate(45deg) translate(-5px, -7px);        
-}
+} 
 /*END NAV - MOBILE --------------------------------------------------------------------------------------------------*/
 
  .caixa{
@@ -563,13 +599,11 @@ background: #D17F0D;
 
 }
 
-
 .box_item:hover{
     width: 270px;
     font-size: 0;
     
 }
-
 
 .box_item:hover img{ 
 display: none;
@@ -583,7 +617,6 @@ display: none;
     text-align: justify;
     font-size: 12px;
 }
-
 
 /*Caixa de Habilidades*/
 
