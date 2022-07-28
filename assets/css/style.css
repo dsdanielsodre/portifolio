@@ -29,8 +29,13 @@
     display:block;
 }
 
+html, body, header, nav, .content{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
  body{
-    margin:0;
     font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size:1rem;
     font-weight:200;
@@ -223,30 +228,9 @@
 }
 
 /*NAV INICIO ----------------------------------------------------------------------------------------------------------*/
- html, body{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-body{
-  font-family: sans-serif;
-}
-
-header{
-    width: 100%;
-/*    height: 100vh;*/
-
-/*
-    background-image: url(teste.jpg);
-    background-repeat: no-repeat;
-  font-family: sans-serif;
-*/
-}
 
 
 .content{
-    width: 100%;
     margin: 4em auto;
     font-size: 20px;
     line-height: 30px;
@@ -254,22 +238,6 @@ header{
     
 }
 
-
-.logo{
-    position: fixed;
-    float: left;
-    margin: 16px 36px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-
-nav{
-    position: fixed;
-    width: 100%;
-        
-}
 
 nav ul{
     list-style: none;
@@ -282,11 +250,17 @@ nav ul{
     transition: 0.6s;
 } 
 
+nav.black{
+         background-color: #23232e; 
+         opacity: 0.98;
+}
+
+
 @media (min-width: 1278px) {
     nav.black ul{
-        /* background: #000; */
+        /* background: #000;  */
         position: static;  
-
+        Transition: transform 0.3s ease-in;  
     }
 }   
 nav.black ul li a{
@@ -329,11 +303,6 @@ margin-left:  32px;
 
 } 
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
 a{
     color: #fff;
     text-decoration: none;
@@ -350,48 +319,130 @@ letter-spacing: 4px;
 
 } 
 
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: #23232e;
-    height: 8vh;
-} 
+/* video */
+#video{
+justify-content: center;
+    max-width: 900px; 
+    max-height: 700px;
+
+}
+
+
+@media (min-width: 1px){
+    #projetos{
+        margin-top: 14rem;
+        }
+    }
+
+
+@media (min-width: 375px) and (max-width: 399px){
+    #projetos{
+        margin-top: 10rem;
+        }
+    }    
+
+@media (min-width: 399px) and (max-width: 600px){
+#projetos{
+    margin-top: 3rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 800px){
+    #projetos{
+        margin-top: 6rem;
+        }
+    }
+
+@media (min-width: 801px) and (max-width: 1024px){
+    #projetos{
+        margin-top: 10rem;
+        }
+    }
+
+    @media (min-width: 1025px){
+        #projetos{
+            margin-top: 15rem;
+            }
+        }
+
+/* video */
+
+/* MENU PRINCIPAL - LISTA*/
+
+
 
 /*NAV END --------------------------------------------------------------------------------------------------*/
 
 
 /*NAV - MOBILE --------------------------------------------------------------------------------------------------*/
 
-
+@media (max-width: 481px){
+    
+    
+    
 /*Hamburguer localização e cor*/
- .mobile-menu{
-display: none;
-cursor: pointer;
-margin-top: 1em;
+  .mobile-menu{
+    display: none;
+    cursor: pointer;
+    margin-top: 1em;
+    }
+    
+    .mobile-menu div{
+        width: 32px;
+        height: 2px;
+        background: #fff;
+        margin: 8px 8px;
+        transition: 0.3s;
+    
+    } 
+    
+ /*Hamburguer localização e cor*/   
+
+    nav{
+        height: 7vh;
+        background-color: red;
+    }
+    .nav-list{
+        top: 6vh; 
+        height: 96vh;
+    }
 }
 
-.mobile-menu div{
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px 8px;
-    transition: 0.3s;
-
-} 
-
-nav{
+@media (min-width: 481px) and (max-width: 1024px) {
+ 
+ 
+ 
+     
+/*Hamburguer localização e cor*/
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+    margin-top: 1em;
+    }
+    
+    .mobile-menu div{
+        width: 32px;
+        height: 2px;
+        background: #fff;
+        margin: 8px 8px;
+        transition: 0.3s;
+    
+    } 
+    
+    nav{
+    /* background-color: green; */
     height: 5vh;
-    background-color: #23232e;
-    display: block;
 }
-.nav-list{
-    position: absolute; 
-    top: 7vh; 
+
+
+ /*Hamburguer localização e cor*/   
+
+ .nav-list{
+     position: fixed; 
+    top: 5vh; 
     right: 0;
     width: 100vw;
-    height: 93vh;
+    height: 100vh;
     background-color: #23232e;
     flex-direction: column;
     align-items: center;
@@ -401,36 +452,66 @@ nav{
 
 }
 
+nav.black{
+    opacity: 1;
+}
+
+}
+
+@media (min-width: 1025px) {
+
+    nav{
+     /* background-color: */
+   
+            position: fixed; 
+           display: flex;
+            justify-content: right;
+            align-items: center;
+           font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif; 
+           /* background: #23232e;  */
+           color: #fff; 
+           height: 8vh; 
+
+    }
+
+
+    nav ul li{
+
+text-align: center;
+    
+    }  
+
+    nav ul li a{
+
+        color: #fff; 
+    
+    }  
+    
+
+
+
+        .mobile-menu div{
+            display: none;
+        
+        } 
+        
+
+}
+
+
+/* MENU PRINCIPAL*/
+
 
 @media (max-width: 1279px) {
-    body{
-       overflow-x: hidden; 
-    }
 
-   
-    nav{
-        height: 7vh;
-    }
-    .nav-list{
-        top: 6vh; 
-        height: 96vh;
-    }
-
-
-    .nav-list li{
-        display: inline;
-      
-        margin-left: 0;
-        opacity: 0;
-    }
-
+} 
     
     .mobile-menu{
         display: block;
-    }
+    } 
 
 
-} /*hamburguer icone*/
+/*hamburguer icone*/
 
  .nav-list.active{
     transform: translateY(0);
@@ -721,4 +802,3 @@ display: none;
     font-weight:normal;
     font-style:normal;
 }
-
